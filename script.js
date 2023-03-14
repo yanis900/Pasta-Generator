@@ -1,4 +1,6 @@
-
+const RandomNumGenerator = num => {
+    return Math.floor(Math.random() * num);
+}
 
 const pastaFactory = {
     pastaType: [Lasagna, Rigatoni, Penne, Farfalle, Spaghetti],
@@ -6,6 +8,7 @@ const pastaFactory = {
     cheeseType: [Parmesan, Ricotta, Feta, Mozzarella, Cheddar]
 }
 
+let pastaRecipe = [];
 
 for (let ingredient in pastaFactory) {
 
